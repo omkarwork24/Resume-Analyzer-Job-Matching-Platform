@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Resume Analyzer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+
+  <div class="w-full max-w-3xl p-6 bg-gray-800 rounded-2xl shadow-lg">
+
+    <h1 class="text-3xl font-bold mb-6 text-center">
+      Resume Analyzer 🚀
+    </h1>
+
+    <!-- Resume Input -->
+    <textarea id="resume" placeholder="Paste your resume text..."
+      class="w-full p-3 mb-4 rounded bg-gray-700"></textarea>
+
+    <!-- Job Description -->
+    <textarea id="job" placeholder="Paste job description..."
+      class="w-full p-3 mb-4 rounded bg-gray-700"></textarea>
+
+    <!-- Button -->
+    <button onclick="analyze()"
+      class="w-full bg-blue-500 hover:bg-blue-600 p-3 rounded font-semibold">
+      Analyze
+    </button>
+
+    <!-- Result -->
+    <div id="result" class="mt-6"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
